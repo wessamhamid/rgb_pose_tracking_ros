@@ -1,0 +1,6 @@
+<launch>
+
+  <node name="rgb_human_tracking_node" pkg="rgb_pose_tracking_ros" type="cam_pose_tracking.py">
+  </node>
+
+</launch>
