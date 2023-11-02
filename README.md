@@ -1,7 +1,9 @@
 # Human Pose Tracking ROS
 This ROS package offers the capability to track human poses in RGB images utilizing the MediaPipe library. The package includes a launch script and a Python script to process images and publishing human pose data.
 
-![tracking1](https://github.com/wessamhamid/rgb_pose_tracking_ros/blob/main/docs/tracking1.gif)
+<p align="center">
+	<img src="./docs/tracking1.gif" height="400">
+</p>
 
 ## Installation
 To use this package, clone the repository into your ROS workspace and build the package.
@@ -32,7 +34,9 @@ To initiate the RGB pose tracking node, use the provided launch file:
 roslaunch rgb_pose_tracking_ros rgb_pose_tracking.launch
 ```
 
-![tracking2](https://github.com/wessamhamid/rgb_pose_tracking_ros/blob/main/docs/tracking2.png)
+<p align="center">
+	<img src="./docs/tracking2.png" height="300">
+</p>
 
 ## Details
 The launch file (rgb_pose_tracking.launch) activates the `rgb_human_tracking_node`, which subscribes to the `/image` topic, processes RGB images, detects and tracks human poses using the MediaPipe library, and publishes annotated images with human pose information on the `/rgb/human_tracking` topic.
